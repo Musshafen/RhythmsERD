@@ -35,3 +35,7 @@ INSERT INTO "Bands" ("Name", "CountryOfOrigin", "NumberOfMembers", "Website",
 VALUES ('Counting Crows', 'US', '7', 'www.countingcrows.com', 'Alt Rock', 'TRUE', 'Adam Duritz', '555-555-1233');
 
 SELECT * FROM "Bands";
+
+
+INSERT INTO "Albums" ("Title", "IsExplicit", "ReleaseDate")
+VALUES ('August and Everything After", 'FALSE', '1993');
