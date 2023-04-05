@@ -51,3 +51,6 @@ UPDATE "Bands" SET "IsSigned" = TRUE WHERE "Name" = "Counting Crows";
 UPDATE "Bands" SET "IsSigned" = FALSE WHERE "Name" = "Counting Crows";
 
 SELECT "Bands"."Name" FROM "Bands" JOIN "Albums" ON "Bands"."AlbumId" = "Albums"."Id";
+
+SELECT "Albums"."Title" FROM "Albums" JOIN "Songs" ON "Albums"."SongId" = "Songs"."Id" ORDER BY "ReleaseDate";
+
