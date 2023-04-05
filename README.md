@@ -32,3 +32,7 @@ CREATE TABLE "Songs" (
 ALTER TABLE "Band" ADD COLUMN "AlbumId" INTEGER NULL REFERENCES "Albums" ("Id");
 
 ALTER TABLE "Albums" ADD COLUMN "SongId" INTEGER NULL REFERENCES "Songs" ("Id");
+
+INSERT INTO "Bands" ("Name", "CountryOfOrigin", "NumberOfMembers", "Website",
+"Style", "IsSigned", "ContactName", "ContactPhoneNumber")
+VALUES ('Counting Crows', 'US', '7', 'www.countingcrows.com', 'Alt Rock', 'TRUE', 'Adam Duritz', '555-555-1233');
