@@ -19,3 +19,11 @@ CREATE TABLE "Albums" (
 "IsExplicit"   BOOLEAN,
 "ReleaseDate"  TEXT
 );
+
+
+CREATE TABLE "Songs" (
+"Id "          SERIAL PRIMARY KEY,
+"TrackNumber"  TEXT,
+"Title"        TEXT NOT NULL, 
+"Duration"     TEXT
+);
