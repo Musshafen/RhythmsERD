@@ -34,7 +34,7 @@ INSERT INTO "Bands" ("Name", "CountryOfOrigin", "NumberOfMembers", "Website",
 "Style", "IsSigned", "ContactName", "ContactPhoneNumber")
 VALUES ('Counting Crows', 'US', '7', 'www.countingcrows.com', 'Alt Rock', 'TRUE', 'Adam Duritz', '555-555-1233');
 
-SELECT \* FROM "Bands";
+SELECT * FROM "Bands";
 
 INSERT INTO "Albums" ("Title", "IsExplicit", "ReleaseDate")
 VALUES ('August and Everything After', 'FALSE', '1993');
@@ -54,5 +54,6 @@ SELECT "Bands"."Name" FROM "Bands" JOIN "Albums" ON "Bands"."AlbumId" = "Albums"
 
 SELECT "Albums"."Title" FROM "Albums" JOIN "Songs" ON "Albums"."SongId" = "Songs"."Id" ORDER BY "ReleaseDate";
 
-
 SELECT * FROM "Bands" WHERE "IsSigned" = TRUE;
+
+SELECT * FROM "Bands" WHERE "IsSigned" = FALSE;
