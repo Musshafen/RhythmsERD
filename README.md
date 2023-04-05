@@ -48,3 +48,4 @@ UPDATE "Albums" SET "SongId" = 1 WHERE "Id" IN (1);
 
 UPDATE "Bands" SET "IsSigned" = TRUE WHERE "Name" = "Counting Crows";
 
+UPDATE "Bands" SET "IsSigned" = FALSE WHERE "Name" = "Counting Crows";
