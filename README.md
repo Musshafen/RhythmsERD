@@ -9,6 +9,13 @@ CREATE TABLE "Bands" (
 "Style"                TEXT,
 "IsSigned"             BOOLEAN,
 "ContactName"          TEXT,
-"ContactPhoneNumber"   INT
+"ContactPhoneNumber"   TEXT
 );
 
+
+CREATE TABLE "Albums" (
+"Id"           SERIAL PRIMARY KEY,
+"Title"        TEXT,
+"IsExplicit"   BOOLEAN,
+"ReleaseDate"  TEXT
+);
