@@ -40,3 +40,8 @@ INSERT INTO "Albums" ("Title", "IsExplicit", "ReleaseDate")
 VALUES ('August and Everything After', 'FALSE', '1993');
 
 UPDATE "Bands" SET "AlbumId" = 1 WHERE "Id" IN (1);
+
+INSERT INTO "Songs" ("TrackNumber", "Title", "Duration")
+VALUES ('5', 'Anna Begins', '4:32');
+
+UPDATE "Albums" SET "SongId" = 1 WHERE "Id" IN (1);
