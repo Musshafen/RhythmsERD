@@ -27,3 +27,6 @@ CREATE TABLE "Songs" (
 "Title"        TEXT NOT NULL, 
 "Duration"     TEXT
 );
+
+
+ALTER TABLE "Band" ADD COLUMN "AlbumId" INTEGER NULL REFERENCES "Albums" ("Id");
