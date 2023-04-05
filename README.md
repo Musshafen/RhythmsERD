@@ -54,3 +54,5 @@ SELECT "Bands"."Name" FROM "Bands" JOIN "Albums" ON "Bands"."AlbumId" = "Albums"
 
 SELECT "Albums"."Title" FROM "Albums" JOIN "Songs" ON "Albums"."SongId" = "Songs"."Id" ORDER BY "ReleaseDate";
 
+
+SELECT * FROM "Bands" WHERE "IsSigned" = TRUE;
